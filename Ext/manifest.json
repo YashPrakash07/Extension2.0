@@ -1,0 +1,25 @@
+{
+
+"name":"Background",
+"manifest_version": 2,
+"version": "1.1.1",
+"description":"To add custom background",
+"icons":{
+
+    "128":"cc.png",
+    "64":"cc.png",
+    "16":"cc.png"
+},
+"page_action":{
+    "default_icon":{
+        "16":"cc.png",
+        "48": "cc.png",
+        "128":"cc.png"
+    }
+},
+"content_scripts":[{
+    "matches":["https://www.google.com/*"],
+    
+    "css":["style.css"]
+}]
+}
